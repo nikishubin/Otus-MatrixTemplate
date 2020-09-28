@@ -1,0 +1,16 @@
+rootProject.name = 'matrix_template'
+
+include ':domain'
+include ':usecase'
+include ':application'
+
+include ':file-reader'
+include ':file-writer'
+
+project(":domain").projectDir = file("/module/inner/domain")
+project(":usecase").projectDir = file("/module/inner/usecase")
+project(":application").projectDir = file("/module/application")
+
+project(":file-reader").projectDir = file("/module/foreign/file-reader")
+project(":file-writer").projectDir = file("/module/foreign/file-writer")
+

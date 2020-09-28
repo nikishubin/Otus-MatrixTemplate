@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>ru.otus.patterns.template.impl.SyncMatrixOperations</OriginalElement>
+  <nodes>
+    <node x="56.4600694444444" y="223.0">ru.otus.patterns.template.writer.impl.OutputStreamWriter</node>
+    <node x="123.125" y="0.0">ru.otus.patterns.template.application.adapter.input.FileToMatrix</node>
+    <node x="871.9114583333333" y="440.0">ru.otus.patterns.template.application.flow.MatrixAddition</node>
+    <node x="814.0364583333333" y="212.0">ru.otus.patterns.template.application.adapter.output.MatrixToFile</node>
+    <node x="0.0" y="440.0">ru.otus.patterns.template.application.flow.MatrixDeterminant</node>
+    <node x="425.4409722222222" y="451.0">ru.otus.patterns.template.application.flow.MatrixTranspose</node>
+    <node x="465.2847222222222" y="11.0">ru.otus.patterns.template.MatrixOperations</node>
+    <node x="582.0364583333333" y="201.0">ru.otus.patterns.template.impl.SyncMatrixOperations</node>
+    <node x="268.4600694444444" y="190.0">ru.otus.patterns.template.application.flow.OperationFlow</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="ru.otus.patterns.template.application.flow.OperationFlow" target="ru.otus.patterns.template.MatrixOperations">
+      <point x="84.375" y="-60.0" />
+      <point x="465.3350694444444" y="170.0" />
+      <point x="553.6180555555554" y="170.0" />
+      <point x="-17.666666666666686" y="49.0" />
+    </edge>
+    <edge source="ru.otus.patterns.template.application.flow.MatrixDeterminant" target="ru.otus.patterns.template.writer.impl.OutputStreamWriter">
+      <point x="-45.0" y="-49.0" />
+      <point x="67.5" y="420.0" />
+      <point x="80.4600694444444" y="420.0" />
+      <point x="-72.0" y="27.0" />
+    </edge>
+    <edge source="ru.otus.patterns.template.impl.SyncMatrixOperations" target="ru.otus.patterns.template.MatrixOperations">
+      <point x="0.0" y="-49.0" />
+      <point x="688.0364583333333" y="170.0" />
+      <point x="624.2847222222222" y="170.0" />
+      <point x="53.0" y="49.0" />
+    </edge>
+    <edge source="ru.otus.patterns.template.application.flow.MatrixAddition" target="ru.otus.patterns.template.MatrixOperations">
+      <point x="93.75" y="-49.0" />
+      <point x="1078.1614583333333" y="420.0" />
+      <point x="1085.8489583333333" y="420.0" />
+      <point x="1085.8489583333333" y="160.0" />
+      <point x="659.6180555555555" y="160.0" />
+      <point x="88.33333333333337" y="49.0" />
+    </edge>
+    <edge source="ru.otus.patterns.template.application.flow.MatrixDeterminant" target="ru.otus.patterns.template.application.flow.OperationFlow">
+      <point x="90.0" y="-49.0" />
+      <point x="202.5" y="420.0" />
+      <point x="324.7100694444444" y="420.0" />
+      <point x="-56.25" y="60.0" />
+    </edge>
+    <edge source="ru.otus.patterns.template.application.flow.MatrixTranspose" target="ru.otus.patterns.template.writer.impl.OutputStreamWriter">
+      <point x="-70.0" y="-38.0" />
+      <point x="439.4409722222222" y="400.0" />
+      <point x="176.4600694444444" y="400.0" />
+      <point x="24.0" y="27.0" />
+    </edge>
+    <edge source="ru.otus.patterns.template.application.flow.MatrixAddition" target="ru.otus.patterns.template.writer.impl.OutputStreamWriter">
+      <point x="-93.75" y="-49.0" />
+      <point x="890.6614583333333" y="370.0" />
+      <point x="224.4600694444444" y="370.0" />
+      <point x="72.0" y="27.0" />
+    </edge>
+    <edge source="ru.otus.patterns.template.application.flow.MatrixAddition" target="ru.otus.patterns.template.application.flow.OperationFlow">
+      <point x="-56.25" y="-49.0" />
+      <point x="928.1614583333333" y="360.0" />
+      <point x="437.2100694444444" y="360.0" />
+      <point x="56.25" y="60.0" />
+    </edge>
+    <edge source="ru.otus.patterns.template.application.flow.MatrixTranspose" target="ru.otus.patterns.template.application.flow.OperationFlow">
+      <point x="-42.0" y="-38.0" />
+      <point x="467.4409722222222" y="390.0" />
+      <point x="362.2100694444444" y="390.0" />
+      <point x="-18.75" y="60.0" />
+    </edge>
+    <edge source="ru.otus.patterns.template.application.flow.MatrixTranspose" target="ru.otus.patterns.template.MatrixOperations">
+      <point x="14.0" y="-38.0" />
+      <point x="523.4409722222222" y="400.0" />
+      <point x="571.5364583333333" y="400.0" />
+      <point x="571.5364583333333" y="170.0" />
+      <point x="588.9513888888888" y="170.0" />
+      <point x="17.66666666666663" y="49.0" />
+    </edge>
+    <edge source="ru.otus.patterns.template.application.flow.MatrixDeterminant" target="ru.otus.patterns.template.MatrixOperations">
+      <point x="-90.0" y="-49.0" />
+      <point x="22.5" y="420.0" />
+      <point x="30.0" y="420.0" />
+      <point x="30.0" y="150.0" />
+      <point x="482.9513888888888" y="150.0" />
+      <point x="-88.33333333333337" y="49.0" />
+    </edge>
+    <edge source="ru.otus.patterns.template.application.flow.MatrixTranspose" target="ru.otus.patterns.template.application.adapter.output.MatrixToFile">
+      <point x="42.0" y="-38.0" />
+      <point x="551.4409722222222" y="410.0" />
+      <point x="840.6614583333333" y="410.0" />
+      <point x="-79.875" y="38.0" />
+    </edge>
+    <edge source="ru.otus.patterns.template.application.flow.MatrixAddition" target="ru.otus.patterns.template.application.adapter.output.MatrixToFile">
+      <point x="56.25" y="-49.0" />
+      <point x="1040.6614583333333" y="330.0" />
+      <point x="1000.4114583333333" y="330.0" />
+      <point x="79.875" y="38.0" />
+    </edge>
+    <edge source="ru.otus.patterns.template.application.flow.OperationFlow" target="ru.otus.patterns.template.application.adapter.input.FileToMatrix">
+      <point x="-28.125" y="-60.0" />
+      <point x="352.8350694444444" y="140.0" />
+      <point x="336.875" y="140.0" />
+      <point x="71.25" y="60.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="601.5" y="603.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

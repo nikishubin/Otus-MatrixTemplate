@@ -1,0 +1,10 @@
+apply plugin: 'java-library'
+
+ext.moduleName = 'otus.patterns.template.usecase'
+
+dependencies {
+    implementation project(":domain")
+
+    testImplementation "org.assertj:assertj-core:${assertjVersion}"
+    testImplementation "org.junit.jupiter:junit-jupiter:${jupiterVersion}"
+}
